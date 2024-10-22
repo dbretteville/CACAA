@@ -4,13 +4,14 @@ body{
     background-repeat: no-repeat;
 }
 ul{
-    width: 50%;
+    width: 70%;
     height: 5em;
     display: flex;
     list-style-type: none;
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 li{
     width: 200px;
@@ -18,7 +19,71 @@ li{
     background-color: #0093ff;
     border-radius: 10px;
 }
-li>p{
-    margin-top: 1.5em;
+li>a{
+    margin-top: 10px;
+}
+
+.boutique{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.joker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.joker img{
+    width: 316px;
+    height: 420px;
+    position: relative;
+    z-index: 1;
+    transition: width 0.5s;
+    transition: height 0.5s;
+}
+.prixjoker{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    border-radius: 20px;
     text-align: center;
+    color: white;
+    background-color: #384444;
+}
+.btnacheter{
+    display: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 70px;
+    position: relative;
+    bottom: 4   0px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    background-color: #34bd86;
+    padding-top: 20px;
+    transition: display 2s;
+}
+.joker:hover{
+    row-gap: 0px;
+}
+.joker:hover img{
+    width: 326px;
+    height: 430px;
+}
+
+.joker:hover .btnacheter{
+    display: contents;
+    display: block;
 }
