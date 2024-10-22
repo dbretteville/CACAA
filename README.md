@@ -6,8 +6,5 @@
     Le panier a été réalisé par Valentin BEURET
     La page à propos a été réalisée par 
 
-<<<<<<< Updated upstream
 Lien du github pages : <https://matheobonnet.github.io/ProjetDevWeb/>
-=======
-<https://matheobonnet.github.io/ProjetDevWeb/>
->>>>>>> Stashed changes
+
