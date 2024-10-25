@@ -1,7 +1,10 @@
 @font-face {
-    font-family: 'MyFont';
-    src: url('font/agenda-fantasy-demo/Agenda Fantasy Demo.ttf'); /* replace with your font file name and location */
-  }
+    font-family: 'BalatroFont';
+    src: url('font/balatro/balatro.ttf'); 
+}
+body{
+    font-family: BalatroFont;
+}
 nav{
     position: relative;
     z-index: 1;
@@ -96,4 +99,8 @@ li>a{
 .joker:hover .btnacheter{
     display: contents;
     display: block;
+}
+.btnacheter:hover{
+    background-color: #238f64;
+
 }
