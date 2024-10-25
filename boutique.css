@@ -1,7 +1,17 @@
-body{
-    background-image: url("images/bg.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
+@font-face {
+    font-family: 'MyFont';
+    src: url('font/agenda-fantasy-demo/Agenda Fantasy Demo.ttf'); /* replace with your font file name and location */
+  }
+nav{
+    position: relative;
+    z-index: 1;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 ul{
     width: 70%;
@@ -37,6 +47,8 @@ li>a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 520px;
+    font-size: 150%;
 }
 .joker img{
     width: 316px;
@@ -53,7 +65,7 @@ li>a{
     width: 130px;
     height: 70px;
     position: relative;
-    top: 30px;
+    top: 20px;
     border-radius: 20px;
     text-align: center;
     color: white;
@@ -67,18 +79,16 @@ li>a{
     width: 130px;
     height: 70px;
     position: relative;
-    bottom: 4   0px;
+    bottom: 30px;
     border-radius: 20px;
     text-align: center;
     color: white;
     background-color: #34bd86;
     padding-top: 20px;
-    transition: display 2s;
+    transition: display 0.5s;
 }
-.joker:hover{
-    row-gap: 0px;
-}
-.joker:hover img{
+
+.joker:hover>img{
     width: 326px;
     height: 430px;
 }
