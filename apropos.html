@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="apropos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -26,42 +27,29 @@
         <source src="images/balatro.mp4" type="video/mp4">
       </video>
       <div class="Title">
+        <h2>Histoire</h2>
         <h4>La boutique, inspirée de l'univers visuel de Baltro, reflète l'esthétique du jeu à travers une conception immersive.
              Cela inclut une vidéo de fond dynamique qui plonge les visiteurs dans l'ambiance caractéristique de Baltro et une typographie unique rappelant les polices utilisées dans le jeu.
               Les jokers, pièces maîtresses de la collection, ajoutent une touche distinctive. Ces cartes spéciales apportent un avantage ou des compétences uniques aux joueurs de Baltro, et dans la boutique,
                elles sont présentées comme des objets de collection exclusifs.</h4>
+               <h2>Nous contacter</h2>
+               <label for="Nom">Votre Nom:</label>
+               <input type="text" name="Nom" id="Nom" value="Nom" required>
+               <input type="text" name="Prenom" id="Nom" value="Prenom" required>
+               <label for="mail">Votre mail:</label>
+               <input type="text" name="Mail" id="mail" value="email" required>
+               <label for="sujet">Sujet:</label>
+               <input type="text" name="Sujet" id="sujet" value="Sujet" required>
+               <label for="message">Message:</label>
+               <input type="text " name="Message" id="Message" required>
+               <label for="submit"></label>
+               <button type="Submit" name="Valider">Valider</button>
       </div>
       <div class="content">
 
 
         <button id="myBtn" onclick="myFunction()">Pause</button>
       </div>
-      <script>
-        var video = document.getElementById("myVideo");
-        
-        var btn = document.getElementById("myBtn");
-        
-        function myFunction() {
-          if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-          } else {
-            video.pause();
-            btn.innerHTML = "Play";
-          }
-        }
- 
-
-
-        </script>
-        <script>
-           const burgerMenu = document.getElementById("burger-menu");
-  const navLinks = document.getElementById("nav-links");
-
-  burgerMenu.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    console.log("Menu burger cliqué");
-  });
-        </script>
+ <script src="script.js"></script>
 </body>
 </html>
