@@ -28,6 +28,7 @@ body, html{
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 .joker{
     display: flex;
@@ -97,6 +98,7 @@ body, html{
     z-index: 1;
     text-align: center;
     color: white;
+    font-size: 190%;
 }
 
 
