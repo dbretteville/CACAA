@@ -31,9 +31,9 @@
 
 .Title {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
-  height: 90vh;
+  height: 70vh;
   width: 100vw;
   color: white;
   z-index: 1;
@@ -41,6 +41,10 @@
   font-family: 'MyFont';
   font-size: 5rem;
   text-align: center;
+  margin-top: 30vh;
+}
+.Title>h1{
+  margin-top: 0;
 }
 
  

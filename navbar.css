@@ -56,6 +56,7 @@ a{
     flex-direction: column;
     gap: 5px;
     height: 24px;
+    z-index: 30;
 }
   
 .burger div {
