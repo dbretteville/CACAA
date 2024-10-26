@@ -1,0 +1,24 @@
+
+var video = document.getElementById("myVideo");
+
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
+const burgerMenu = document.getElementById("burger-menu");
+const navLinks = document.getElementById("nav-links");
+
+burgerMenu.addEventListener("click", () => {
+navLinks.classList.toggle("open");
+
+});
+

@@ -26,20 +26,7 @@
 }
 
 
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
 
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
 
 
 .Title {
@@ -61,4 +48,9 @@ body, html{
   font-family: BalatroFont;
   padding: 0px;
   margin: 0px;
+}
+@media(max-width: 768px){
+  .Title{
+    font-size: 3rem;
+  }
 }

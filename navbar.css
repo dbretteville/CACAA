@@ -36,6 +36,20 @@ a{
 .titre{
     margin: 0;
 }
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
 .burger {
     display: none;
     cursor: pointer;
@@ -74,8 +88,5 @@ a{
   
   #nav-links.open {
       display: flex;
-    }
-    .Title{
-      font-size: 3rem;
     }
   }
