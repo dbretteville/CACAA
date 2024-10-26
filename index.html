@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="accueuil.css">
+    <link rel="stylesheet" href="navbar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   </head>
@@ -20,6 +21,7 @@
       <div></div>
     </div>
   </header>
+
   
 <body>
     <video autoplay muted loop id="myVideo">
@@ -52,13 +54,14 @@
 
         </script>
         <script>
-           const burgerMenu = document.getElementById("burger-menu");
-  const navLinks = document.getElementById("nav-links");
+const burgerMenu = document.getElementById("burger-menu");
+const navLinks = document.getElementById("nav-links");
 
-  burgerMenu.addEventListener("click", () => {
+burgerMenu.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     console.log("Menu burger cliqué");
-  });
+});
+
         </script>
 </body>
 </html>
