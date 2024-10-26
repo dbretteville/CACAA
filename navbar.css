@@ -15,19 +15,24 @@ header{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 15px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 nav{
     display: flex;
     justify-content: space-evenly;
-    width: 70%;
+    width: 80%;
     text-align: center;
+    align-items: center;
 }
 header>p{
     font-family: TitleFont;
 }
 a{
-    height: 2em;
     text-decoration: none;
     outline: none;
     color: white;
+}
+.titre{
+    margin: 0;
 }
