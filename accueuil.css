@@ -1,61 +1,81 @@
-/* Style the video: 100% width and height to cover the entire window */
 @font-face {
   font-family: 'MyFont';
   src: url('font/agenda-fantasy-demo/Agenda Fantasy Demo.ttf'); /* replace with your font file name and location */
 }
+@font-face {
+  font-family: 'BalatroFont';
+  src: url('font/balatro/balatro.ttf'); /* replace with your font file name and location */
+}
+
+/* Style the video: 100% width and height to cover the entire window */
 #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
-  
-  /* Add some content at the bottom of the video/page */
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Style the button used to pause/play the video */
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  }
-  h1 {
-    font-family: 'MyFont';
-    font-size: 24px;
-    color: #333;
-  }
-  .Title{
-    position: fixed;
-    color: white;
-    height: 100vh;
-    width: 100vw;
-    
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Ensure the video is in the background */
+}
 
+/* Style the overlay content */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: 2; /* Overlay content on top of the video */
+}
 
-  }
-.Title>h1{
-font-size: 1000%;
-color: white;
-margin-top: auto;
-margin-bottom: auto;
+/* Style the button */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
 
-margin-left: auto;
-margin-right: auto;
-  }
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Title styling */
+.Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+  color: white;
+  z-index: 1;
+  position: relative;
+  font-family: 'MyFont';
+  font-size: 5rem;
+  text-align: center;
+}
+.nav{
+display: flex;
+position: absolute;
+flex-direction: row;
+font-family: 'BalatroFont';
+flex-wrap: wrap;
+justify-content: space space-around;
+height: 5em;
+width: 100vw;
+}
+.nav>a{
+  width: 200px;
+  height: 5em;
+  background-color: #0093ff;
+  border-radius: 10px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+}
