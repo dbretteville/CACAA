@@ -14,9 +14,10 @@ header{
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 15px;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 nav{
     display: flex;
@@ -27,6 +28,7 @@ nav{
 }
 header>p{
     font-family: TitleFont;
+    margin-left: 10px;
 }
 a{
     text-decoration: none;
@@ -65,28 +67,34 @@ a{
 }
   
   
-  #nav-links {
+#nav-links {
+  display: flex;
+}
+
+
+@media (max-width: 768px) {
+header{
+  position: sticky;
+}
+#nav-links {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  width: 200px;
+  padding: 20px;
+  z-index: 9;
+}
+.burger {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+  
+#nav-links.open {
     display: flex;
   }
-  
-  @media (max-width: 768px) {
-    #nav-links {
-      display: none;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.9);
-      flex-direction: column;
-      width: 200px;
-      padding: 20px;
-      z-index: 9;
-  }
-  .burger {
-    display: flex;
-  }
-  
-  
-  #nav-links.open {
-      display: flex;
-    }
-  }
+}
