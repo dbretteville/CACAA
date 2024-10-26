@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'BalatroFont';
+    src: url('font/balatro/balatro.ttf'); 
+}
+@font-face {
+    font-family: 'TitleFont';
+    src: url('font/agenda-fantasy-demo/Agenda\ Fantasy\ Demo.ttf'); 
+}
+header{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+}
+header>p{
+    font-family: TitleFont;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+.titre{
+    margin: 0;
+}
