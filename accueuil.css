@@ -1,34 +1,31 @@
 @font-face {
   font-family: 'MyFont';
-  src: url('font/agenda-fantasy-demo/Agenda Fantasy Demo.ttf'); /* replace with your font file name and location */
+  src: url('font/agenda-fantasy-demo/Agenda Fantasy Demo.ttf'); 
 }
 @font-face {
   font-family: 'BalatroFont';
-  src: url('font/balatro/balatro.ttf'); /* replace with your font file name and location */
+  src: url('font/balatro/balatro.ttf');
 }
 
-/* Style the video: 100% width and height to cover the entire window */
+
 #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1; /* Ensure the video is in the background */
 }
 
-/* Style the overlay content */
+
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
   width: 100%;
   padding: 20px;
-  z-index: 2; /* Overlay content on top of the video */
+  z-index: 2;
 }
 
-/* Style the button */
+
 #myBtn {
   width: 200px;
   font-size: 18px;
@@ -44,7 +41,7 @@
   color: black;
 }
 
-/* Title styling */
+
 .Title {
   display: flex;
   align-items: center;
@@ -58,24 +55,49 @@
   font-size: 5rem;
   text-align: center;
 }
-.nav{
-display: flex;
-position: absolute;
-flex-direction: row;
-font-family: 'BalatroFont';
-flex-wrap: wrap;
-justify-content: space space-around;
-height: 5em;
-width: 100vw;
+@font-face {
+  font-family: 'BalatroFont';
+  src: url('font/balatro/balatro.ttf'); 
 }
-.nav>a{
-  width: 200px;
-  height: 5em;
-  background-color: #0093ff;
-  border-radius: 10px;
+@font-face {
+  font-family: 'TitleFont';
+  src: url('font/agenda-fantasy-demo/Agenda\ Fantasy\ Demo.ttf'); 
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
   text-align: center;
+}
+
+
+header > p {
+  font-family: TitleFont;
+}
+
+a {
+  height: 2em;
   text-decoration: none;
+  outline: none;
+  color: white;
+  padding: 0 10px;
+  font-family: 'BalatroFont';
+}
+ 
+body, html{
+  font-family: BalatroFont;
+  padding: 0px;
+  margin: 0px;
 }
