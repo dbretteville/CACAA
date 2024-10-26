@@ -2,13 +2,16 @@
     font-family: 'BalatroFont';
     src: url('font/balatro/balatro.ttf'); 
 }
-body{
+@font-face {
+    font-family: 'TitleFont';
+    src: url('font/agenda-fantasy-demo/Agenda\ Fantasy\ Demo.ttf'); 
+}
+body, html{
     font-family: BalatroFont;
+    padding: 0px;
+    margin: 0px;
 }
-nav{
-    position: relative;
-    z-index: 1;
-}
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -16,26 +19,6 @@ nav{
     min-width: 100%;
     min-height: 100%;
 }
-ul{
-    width: 70%;
-    height: 5em;
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-li{
-    width: 200px;
-    height: 5em;
-    background-color: #0093ff;
-    border-radius: 10px;
-}
-li>a{
-    margin-top: 10px;
-}
-
 .boutique{
     display: flex;
     justify-content: space-evenly;
@@ -50,7 +33,7 @@ li>a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 520px;
+    height: 530px;
     font-size: 150%;
 }
 .joker img{
@@ -100,7 +83,55 @@ li>a{
     display: contents;
     display: block;
 }
+.joker:hover .nomJoker{
+    display: contents;
+    display: block;
+}
 .btnacheter:hover{
     background-color: #238f64;
 
+}
+.nomJoker{
+    display: none;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+
+/* Navbar */
+
+@font-face {
+    font-family: 'BalatroFont';
+    src: url('font/balatro/balatro.ttf'); 
+}
+@font-face {
+    font-family: 'TitleFont';
+    src: url('font/agenda-fantasy-demo/Agenda\ Fantasy\ Demo.ttf'); 
+}
+header{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    text-align: center;
+}
+header>p{
+    font-family: TitleFont;
+}
+a{
+    height: 2em;
+    text-decoration: none;
+    outline: none;
+    color: white;
 }
