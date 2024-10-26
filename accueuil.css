@@ -101,3 +101,46 @@ body, html{
   padding: 0px;
   margin: 0px;
 }
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+
+#nav-links {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    z-index: 9;
+}
+.burger {
+  display: flex;
+}
+
+
+#nav-links.open {
+    display: flex;
+  }
+  .Title{
+    font-size: 3rem;
+  }
+}

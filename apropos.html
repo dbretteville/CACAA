@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="apropos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <header>
+    <p class="titre">Jester's Deck</p>
+    <nav id="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="boutique.html">Boutique</a>
+      <a href="Panier.html">Panier</a>
+      <a href="a_propos.html">A propos</a>
+    </nav>
+    <div class="burger" id="burger-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+  
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="images/balatro.mp4" type="video/mp4">
+      </video>
+      <div class="Title">
+        <h4>La boutique, inspirée de l'univers visuel de Baltro, reflète l'esthétique du jeu à travers une conception immersive.
+             Cela inclut une vidéo de fond dynamique qui plonge les visiteurs dans l'ambiance caractéristique de Baltro et une typographie unique rappelant les polices utilisées dans le jeu.
+              Les jokers, pièces maîtresses de la collection, ajoutent une touche distinctive. Ces cartes spéciales apportent un avantage ou des compétences uniques aux joueurs de Baltro, et dans la boutique,
+               elles sont présentées comme des objets de collection exclusifs.</h4>
+      </div>
+      <div class="content">
+
+
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+      </div>
+      <script>
+        var video = document.getElementById("myVideo");
+        
+        var btn = document.getElementById("myBtn");
+        
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+ 
+
+
+        </script>
+        <script>
+           const burgerMenu = document.getElementById("burger-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  burgerMenu.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    console.log("Menu burger cliqué");
+  });
+        </script>
+</body>
+</html>

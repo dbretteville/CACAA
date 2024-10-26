@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   </head>
-    <header>
+  <header>
     <p class="titre">Jester's Deck</p>
-    <nav>
+    <nav id="nav-links">
       <a href="index.html">Accueil</a>
       <a href="boutique.html">Boutique</a>
       <a href="Panier.html">Panier</a>
-      <a href="a_propos.html">A propos</a>
+      <a href="apropos.html">A propos</a>
     </nav>
+    <div class="burger" id="burger-menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </header>
+  
 <body>
     <video autoplay muted loop id="myVideo">
         <source src="images/balatro.mp4" type="video/mp4">
@@ -22,20 +28,16 @@
       <div class="Title">
         <h1>Jester's Deck</h1>
       </div>
-      <!-- Optional: some overlay text to describe the video -->
       <div class="content">
 
 
         <button id="myBtn" onclick="myFunction()">Pause</button>
       </div>
       <script>
-        // Get the video
         var video = document.getElementById("myVideo");
         
-        // Get the button
         var btn = document.getElementById("myBtn");
         
-        // Pause and play the video, and change the button text
         function myFunction() {
           if (video.paused) {
             video.play();
@@ -45,7 +47,18 @@
             btn.innerHTML = "Play";
           }
         }
+ 
+
+
         </script>
-        
+        <script>
+           const burgerMenu = document.getElementById("burger-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  burgerMenu.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    console.log("Menu burger cliqué");
+  });
+        </script>
 </body>
 </html>
